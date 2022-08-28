@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+}
+
+.home-title {
+    font-size: 90px;
+    color: whitesmoke;
+}
+
+.home-button {
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(45deg, rgb(247, 141, 224), rgb(249, 122, 122));
+    padding: 12px 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.home-button:hover {
+    background: linear-gradient(300deg, rgb(247, 141, 224), rgb(249, 122, 122));
+}
+
+
+
+.submit-form-button {
+    color: rgb(121, 119, 119);
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: solid 2px rgb(121, 119, 119);
+    margin: 6px;
+}
+
+.submit-form-button:hover {
+    color: rgb(48, 48, 48);
+    border: solid 2px rgb(48, 48, 48);
+}
+
+
+/*-------- Navbar --------*/
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-button {
+    color: rgb(254, 48, 114);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+nav .nav-button:disabled {
+    background-color: rgb(181, 180, 180);
+    color: rgb(42, 189, 184);
+}
+
+nav .logo-container {
+    width: 170px;
+    margin: 15px;
+}
+
+nav .logo-container .logo {
+    width: 100%;
+}
+
+
+/*-------- Home page --------*/
+.home-page-background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient( to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%)
+}
+
+.home {
+    margin-top: 30vh;
+}
+
+
+
+
+/*-------- Create Account Form --------*/
+
+.create-account-form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.create-account-form .close-icon {
+    float: right;
+}
+
+.create-account-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-account-form input[type=password],
+.create-account-form input[type=email] {
+    padding: 8px;
+    margin: 8px;
+    font-size: 17px;
+}
+
+
+
+/*-------- New User Form Page --------*/
+
+.new-user-form {
+    border-top: solid 1px rgb(187, 185, 185);
+}
+
+.new-user-form form {
+    display: flex;
+    justify-content: center;
+}
+
+.new-user-form form section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 35%;
+    text-align: start;
+}
+
+.new-user-form form input {
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 15px;
+    border: solid 2px rgb(219, 219, 219);
+    border-radius: 10px;
+}
+
+.new-user-form form label {
+    margin: 10px 0;
+}
+
+.new-user-form form .-input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.new-user-form form .-input-container input {
+    margin-right: 10px;
+}
+
+.new-user-form form .-input-container label {
+    padding: 10px;
+    border: solid 2px rgb(144, 144, 144);
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin-right: 10px;
+}
+
+.new-user-form form input[type=radio] {
+    display: none;
+}
+
+.new-user-form form input[type=number] {
+    width: 10%;
+}
+
+.new-user-form form input[type=radio]:checked + label {
+    border: solid 2px rgb(249, 79, 79);
+}
+
+.new-user-form form input[type=submit]:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.new-user-form form input[type=submit]:active {
+    background-color: rgb(242, 140, 243);
+}
+
+.new-user-form form .photo-container img {
+    width: 100%
+}
+
+
+
+/*-------- Dashboard  --------*/
+
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard .swipe-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.swipe {
+    position: absolute;
+}
+
+.dashboard .card-container {
+    width: 400px;
+    height: 600px;
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+
+.img-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+
+/*-------- Matches Container --------*/
+
+.matches-container {
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width: 30%;
+    text-align: left;
+    z-index: 1;
+}
+
+.matches-container .matches-container-header {
+    background: linear-gradient(45deg, rgb(247, 141, 224), rgb(249, 122, 122));
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.matches-container-header .profile,
+.matches-container-header .log-out-icon {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+.img-container {
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+
+
+
+.matches {
+    padding: 20px;
+    height: 60vh;
+    overflow-y: auto;
+}
